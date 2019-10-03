@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Y2f-Dl-TAM" customClass="Wave" customModule="SoundWave" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="35" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPi-ng-2Ct">
+                    <rect key="frame" x="0.0" y="0.0" width="35" height="73"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTu-7A-dNh" userLabel="TOP">
+                            <rect key="frame" x="0.0" y="40" width="35" height="33"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="GTu-7A-dNh" firstAttribute="top" secondItem="VPi-ng-2Ct" secondAttribute="top" constant="40" id="4fp-6c-bkC"/>
+                        <constraint firstAttribute="bottom" secondItem="GTu-7A-dNh" secondAttribute="bottom" id="TN6-dZ-kJS"/>
+                        <constraint firstItem="GTu-7A-dNh" firstAttribute="leading" secondItem="VPi-ng-2Ct" secondAttribute="leading" id="bdE-UW-hHB"/>
+                        <constraint firstAttribute="trailing" secondItem="GTu-7A-dNh" secondAttribute="trailing" id="nyb-Lf-FSC"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2n-fr-oWf">
+                    <rect key="frame" x="0.0" y="73" width="35" height="73"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R78-3I-7PO" userLabel="BOTTOM">
+                            <rect key="frame" x="0.0" y="0.0" width="35" height="33"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="R78-3I-7PO" secondAttribute="bottom" constant="40" id="9Xi-7f-S5n"/>
+                        <constraint firstItem="R78-3I-7PO" firstAttribute="top" secondItem="f2n-fr-oWf" secondAttribute="top" id="q10-bJ-sYd"/>
+                        <constraint firstAttribute="trailing" secondItem="R78-3I-7PO" secondAttribute="trailing" id="tih-EW-Rfy"/>
+                        <constraint firstItem="R78-3I-7PO" firstAttribute="leading" secondItem="f2n-fr-oWf" secondAttribute="leading" id="yTL-7z-USc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="f2n-fr-oWf" firstAttribute="trailing" secondItem="fii-pc-Moq" secondAttribute="trailing" id="COA-xr-8A5"/>
+                <constraint firstItem="VPi-ng-2Ct" firstAttribute="top" secondItem="Y2f-Dl-TAM" secondAttribute="top" id="DGp-Ev-V8W"/>
+                <constraint firstItem="VPi-ng-2Ct" firstAttribute="height" secondItem="Y2f-Dl-TAM" secondAttribute="height" multiplier="1/2" id="Exw-e4-AmJ"/>
+                <constraint firstItem="VPi-ng-2Ct" firstAttribute="leading" secondItem="fii-pc-Moq" secondAttribute="leading" id="F7Z-zt-l3R"/>
+                <constraint firstItem="f2n-fr-oWf" firstAttribute="height" secondItem="VPi-ng-2Ct" secondAttribute="height" id="Seo-Wh-ddB"/>
+                <constraint firstItem="f2n-fr-oWf" firstAttribute="bottom" secondItem="fii-pc-Moq" secondAttribute="bottom" id="kuU-ZY-6jg"/>
+                <constraint firstItem="VPi-ng-2Ct" firstAttribute="trailing" secondItem="fii-pc-Moq" secondAttribute="trailing" id="y0B-qe-U1W"/>
+                <constraint firstItem="f2n-fr-oWf" firstAttribute="leading" secondItem="fii-pc-Moq" secondAttribute="leading" id="y3a-GX-z41"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fii-pc-Moq"/>
+            <connections>
+                <outlet property="bottom" destination="9Xi-7f-S5n" id="5hA-pw-JhS"/>
+                <outlet property="top" destination="4fp-6c-bkC" id="kCP-4t-d9k"/>
+            </connections>
+            <point key="canvasLocation" x="24.800000000000001" y="-342.72863568215894"/>
+        </view>
+    </objects>
+</document>
