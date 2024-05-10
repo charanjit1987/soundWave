@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     private var waves:[Wave] = []
     private var stop:Bool = false
     private var pitch:PITCH = .veryLow
-    
+    private var test:String = ""
     
     //Recorder
     var recordButton: UIButton!
