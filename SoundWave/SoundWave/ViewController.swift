@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     private var stop:Bool = false
     private var pitch:PITCH = .veryLow
     private var test:String = ""
+    private var test1:String = ""
     
     //Recorder
     var recordButton: UIButton!
